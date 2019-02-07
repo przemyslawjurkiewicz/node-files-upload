@@ -1,19 +1,19 @@
 <html>
-
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
-    <h1>Wgraj plik</h1>
+  <body>
+    <h1>Wgraj obrazek</h1>
     <form action="/upload" enctype="multipart/form-data" method="post">
-        <label>Tytuł pliku</label>
-        <input type="text" name="title">
-        <br>
-        <label>Plik</label>
-        <input type="file" name="upload" multiple="multiple"><br>
-        <input type="submit" value="Wyślij">
+      <label>Podaj nową nazwę pliku</label>
+      <input type="text" name="title" />
+      <label>lub zostaw pustą aby wczytać bez zmiany nazwy.</label>
+      <br />
+      <label>Plik</label>
+      <input type="file" name="upload" multiple="multiple" /><br />
+      <input type="submit" value="Wyślij" />
     </form>
-</body>
-
+  </body>
 </html>
