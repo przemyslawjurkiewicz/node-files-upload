@@ -12,7 +12,7 @@ exports.upload = function(request, response) {
     var extension = files.upload.name.match(/\..+$/);
     //if title is empty fileName is orginal name
     fileName = !fields.title ? files.upload.name : fields.title + extension;
-    //rename file and add img/ to path
+    //rename file and add img/ to path.
     fs.renameSync(files.upload.path, 'img/' + fileName);
     fs.readFile('templates/upload.html', function(err, html) {
       if (err) throw console.err();
